@@ -398,7 +398,7 @@ h1, p {
 }
 
 .btn-copy {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: "Oswald", sans-serif;
   font-weight: 300;
   color: white;
@@ -408,7 +408,7 @@ h1, p {
 .btn-author {
   transition: all 1s ease-in-out;
   text-shadow: 0 0 1px white;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-family: 'Mrs Saint Delafield', cursive;
   opacity: 0;
   color: white;
@@ -417,7 +417,7 @@ h1, p {
 
 .btn-copy {
   padding: 0 5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .btn-button {
@@ -431,69 +431,17 @@ h1, p {
   margin: 0 auto;
   display: block;
   position: relative;
-}
-.btn-button::before {
-  transition: all 0.1s ease-in-out;
-  content: "";
-  opacity: 0;
-  position: absolute;
-  width: 5rem;
-  padding: 0.5rem;
-  top: 0%;
-  left: 0%;
-  height: 56%;
-}
-.btn-button::after {
-  text-shadow: 0 0 1px white, 0 1px 2px rgba(255, 255, 255, 0.5);
-  transition: all 0.1s ease-in-out;
-  font-size: 1.5rem;
-  content: "GO!";
-  color: black;
-  position: absolute;
-  opacity: 0;
-  top: 0%;
-  left: 35%;
+  outline: none;
+  border-radius: 5px;
 }
 
 .btn-button:hover {
   width: 7rem;
-}
-.btn-button:hover::before {
-  opacity: 1;
-  animation: btn_stripe 0.5s infinite linear;
-  background: linear-gradient(45deg, #ffffff 25%, #000000 25%, #000000 50%, #ffffff 50%, #ffffff 75%, #000000 75%, #000000);
-  background-size: 30px 30px;
-  width: 7rem;
-}
-.btn-button:hover::after {
-  opacity: 1;
+  font-size:0.9em;
+  font-weight:bold;
+  background-color: rgba(15,13,34,0.2);
 }
 
-.btn-button:active {
-  background-color: white;
-}
-.btn-button:active::before {
-  opacity: 0;
-}
-.btn-button:active::after {
-  text-shadow: 0 0 1px white, 0 1px 2px rgba(255, 255, 255, 0.5);
-  transition: all 0.1s ease-in-out;
-  font-size: 1.5rem;
-  content: "SWEET";
-  color: black;
-  position: absolute;
-  top: 0%;
-  left: 20%;
-}
-
-@keyframes btn_stripe {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100% 0;
-  }
-}
 .btn:hover {
   box-shadow: inset 0 0 0 0 rgba(255, 255, 255, 0), 0 0 30px white;
   transform: scale(1);
@@ -2998,4 +2946,5 @@ i:nth-child(8) {
   height: 100%;
   z-index: 9999;
   background: url('https://media.giphy.com/media/mBMdeZHp6bqfkL4vBI/giphy.gif') 50% 50% no-repeat rgb(249,249,249);
+
 
